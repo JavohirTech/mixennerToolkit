@@ -1,8 +1,125 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
 
+/* 
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+ */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+    --light-blue: #4a91f2;
+    --dark-blue: #3b7dd8;
+
+    --light-grey: #bbbbbb;
+    --dark-grey: #aaaaaa;
+
+    --light-green: #00b159;
+    --dark-green: #008744;
+
+
+    --light-red: #ff6f69;
+    --dark-red: #ee4035;
+
+    --light-yellow: #ffc425;
+    --dark-yellow: #edc951;
+
+    --light-info: #8dbdff;
+    --dark-info: #64a1f4;
+
+    --light-white: #ffffff;
+    --dark-white: #bbbbbb;
+
+    --light-black: #000000;
+    --dark-black: #1a1a1a;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.btn {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+    color: #fff;
+    transition: all 0.4s;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-blue {
+    background-color: var(--dark-blue);
+}
+
+.btn-blue:hover {
+    background-color: var(--light-blue);
+}
+
+.btn-green {
+    background-color: var(--dark-green);
+}
+
+.btn-green:hover {
+    background-color: var(--light-green);
+}
+
+.btn-grey {
+    background-color: var(--dark-grey);
+}
+
+.btn-grey:hover {
+    background-color: var(--light-grey);
+}
+
+.btn-red {
+    background-color: var(--dark-red);
+}
+
+.btn-red:hover {
+    background-color: var(--light-red);
+}
+
+.btn-yellow {
+    color: #000;
+    background-color: var(--dark-yellow);
+}
+
+.btn-yellow:hover {
+    background-color: var(--light-yellow);
+}
+
+.btn-info {
+    color: #000;
+    background-color: var(--dark-info);
+}
+
+.btn-info:hover {
+    background-color: var(--light-info);
+}
+
+.btn-white {
+    background-color: var(--dark-white);
+}
+
+.btn-white:hover {
+    background-color: var(--light-white);
+}
+
+.btn-black {
+    background-color: var(--dark-black);
+}
+
+.btn-black:hover {
+    background-color: var(--light-black);
 }
