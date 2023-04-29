@@ -6,8 +6,8 @@ font-family: 'Roboto', sans-serif;
  */
 
 :root {
-    --light-blue: #4a91f2;
-    --dark-blue: #3b7dd8;
+    --light-blue: #007bff;
+    --dark-blue: #0069d9;
 
     --light-grey: #bbbbbb;
     --dark-grey: #aaaaaa;
@@ -43,83 +43,93 @@ body {
     min-height: 100vh;
 }
 
-.btn {
-    margin: 5px;
-    padding: 5px 10px;
-    border: none;
-    outline: none;
-    font-size: 20px;
-    border-radius: 5px;
+.btner {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     color: #fff;
-    transition: all 0.4s;
 }
 
-.btn:hover {
+.btner:focus,
+.btner:hover {
     cursor: pointer;
+    text-decoration: none;
 }
 
-.btn-blue {
+.btner-blue {
     background-color: var(--dark-blue);
 }
 
-.btn-blue:hover {
+.btner-blue:hover {
     background-color: var(--light-blue);
 }
 
-.btn-green {
+.btner-green {
     background-color: var(--dark-green);
 }
 
-.btn-green:hover {
+.btner-green:hover {
     background-color: var(--light-green);
 }
 
-.btn-grey {
+.btner-grey {
     background-color: var(--dark-grey);
 }
 
-.btn-grey:hover {
+.btner-grey:hover {
     background-color: var(--light-grey);
 }
 
-.btn-red {
+.btner-red {
     background-color: var(--dark-red);
 }
 
-.btn-red:hover {
+.btner-red:hover {
     background-color: var(--light-red);
 }
 
-.btn-yellow {
+.btner-yellow {
     color: #000;
     background-color: var(--dark-yellow);
 }
 
-.btn-yellow:hover {
+.btner-yellow:hover {
     background-color: var(--light-yellow);
 }
 
-.btn-info {
+.btner-info {
     color: #000;
     background-color: var(--dark-info);
 }
 
-.btn-info:hover {
+.btner-info:hover {
     background-color: var(--light-info);
 }
 
-.btn-white {
+.btner-white {
     background-color: var(--dark-white);
 }
 
-.btn-white:hover {
+.btner-white:hover {
     background-color: var(--light-white);
 }
 
-.btn-black {
+.btner-black {
     background-color: var(--dark-black);
 }
 
-.btn-black:hover {
+.btner-black:hover {
     background-color: var(--light-black);
 }
